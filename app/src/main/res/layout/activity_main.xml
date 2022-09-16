@@ -4,18 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/purple">
 
-    <TextView
+    <ImageView
+        android:id="@+id/map"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CRISIS"
-        android:textColor="#5b0b3b"
-        android:textStyle="bold"
-        android:textSize="30sp"
+        android:contentDescription="Mapa del museo"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/map" />
+
+    <Button
+        android:id="@+id/btn_pos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estoy cerca"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@+id/map" />
 </androidx.constraintlayout.widget.ConstraintLayout>
