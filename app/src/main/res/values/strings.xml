@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Smart Expo</string>
+    <string name="your_location">Usted está aqui</string>
+    <string name="btn_pos">Estoy cerca</string>
+    <string name="map">Mapa del museo</string>
+    <string name="loc_icon">Icono de ubicación</string>
 </resources>

@@ -1,9 +1,7 @@
 package com.example.smartexpo
 
-import android.content.ContentValues.TAG
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 import com.google.firebase.firestore.ktx.firestore
@@ -13,13 +11,18 @@ import com.google.firebase.ktx.Firebase
 class MainActivity : AppCompatActivity() {
     val db = Firebase.firestore
     var btn_pos : Button ?= null
+    var smart_point_1 : Button ?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btn_pos=findViewById(R.id.btn_pos)
+        smart_point_1=findViewById(R.id.smart_point)
         btn_pos!!.setOnClickListener{
             Toast.makeText(this, "ESTOY CERCA", Toast.LENGTH_SHORT).show()
+        }
+        smart_point_1!!.setOnClickListener {
+            Toast.makeText(this, "SMART POINT", Toast.LENGTH_SHORT).show()
         }
     }
 
