@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/map"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="337dp"
+        android:layout_height="620dp"
         android:contentDescription="@string/map"
         app:layout_constraintBottom_toTopOf="@+id/btn_pos"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +35,9 @@
         android:id="@+id/btn_pos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/purple_200"
+        android:background="@drawable/rounded_button"
+        android:padding="10dp"
+        android:elevation="20dp"
         android:text="@string/btn_pos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
