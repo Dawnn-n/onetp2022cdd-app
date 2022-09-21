@@ -3,9 +3,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".SmartPointInfo">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="337dp"
+        android:layout_height="620dp"
+        android:background="@drawable/map"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+
+    <Button
+        android:id="@+id/btn_pos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_button"
+        android:elevation="20dp"
+        android:padding="10dp"
+        android:text="@string/btn_pos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#006E6E6E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/screen_background_dark_transparent" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/node_info"
@@ -21,34 +63,32 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="end"
-            android:layout_weight="0"
-            android:background="@mipmap/close_icon"
             android:layout_marginTop="100dp"
-            android:layout_marginEnd="30dp"/>
+            android:layout_marginEnd="30dp"
+            android:layout_weight="0"
+            android:background="@mipmap/close_icon" />
 
         <TextView
             android:id="@+id/sp_info_txt"
             android:layout_width="350dp"
             android:layout_height="300dp"
-            android:layout_weight="0"
             android:layout_gravity="center"
-            android:text="@string/sp_info"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="25sp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"/>
+            android:layout_weight="0"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
 
         <ImageButton
             android:id="@+id/replay_btn"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_weight="0"
             android:layout_gravity="end"
             android:layout_marginEnd="30dp"
-            android:background="@mipmap/replay_icon"
-            />
+            android:layout_weight="0"
+            android:background="@mipmap/replay_icon" />
 
     </LinearLayout>
 
